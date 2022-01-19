@@ -111,7 +111,7 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
-  return str.match(/[A-Z]\w+/);
+  return str.match(/[A-Z]\w+/g) || [];
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -121,7 +121,7 @@ Write a function named citiesAtoJ that takes in an array of city names and uses 
 ------------------------------------------------------------------------------------------------ */
 
 const citiesAtoJ = (arr) => {
-  // Solution code here...
+  return arr.filter(e => /^[A-J]/.test(e));
 };
 
 /* ------------------------------------------------------------------------------------------------
