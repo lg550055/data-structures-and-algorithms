@@ -155,7 +155,13 @@ Write a function named totalCharacters that takes in an array and returns the nu
 ------------------------------------------------------------------------------------------------ */
 
 const totalCharacters = (arr) => {
-  return arr.reduce((p, c) => p + c.name ? 1 : 0 + c.spouse ? 1 : 0 + c.children.length);
+  let sum = 0;
+  arr.forEach(e => {
+    if(e.name) { sum++ ;}
+    if(e.spouse) { sum++ ;}
+    if(e.children) { sum += e.children.length ;}
+  });
+  return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -170,7 +176,13 @@ For example: [{ house: 'Stark', members: 7 }, { house: 'Arryn', members: 3 }, ..
 
 const houseSize = (arr) => {
   const sizes = [];
-  // Solution code here...
+  arr.forEach(e => {
+    let sum = 0;
+    if(e.name) {sum++;}
+    if(e.spouse) {sum++ ;}
+    if(e.children) { sum += e.children.length ;}
+    sizes.push({house: e.house, members: sum});
+  });
   return sizes;
 };
 
@@ -274,13 +286,13 @@ describe('Testing challenge 7', () => {
   });
 });
 
-xdescribe('Testing challenge 8', () => {
+describe('Testing challenge 8', () => {
   test('It should return the number of characters in the array', () => {
     expect(totalCharacters(characters)).toStrictEqual(27);
   });
 });
 
-xdescribe('Testing challenge 9', () => {
+describe('Testing challenge 9', () => {
   test('It should return an object for each house containing the name and size', () => {
     expect(houseSize(characters)[1]).toStrictEqual({ house: 'Arryn', members: 3 });
     expect(houseSize(characters).length).toStrictEqual(7);
