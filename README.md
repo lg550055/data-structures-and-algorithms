@@ -1,10 +1,29 @@
-# Data Structures and Algorithms
+## Data Structures and Algorithms
 
-See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
+### Progress to date:  Completed JavaScript
 
-## Repository Quick Tour and Usage
+##### 15 sets of JavaScript code challenges
+Topics include:
+- loops
+- conditionals (inc ternary)
+- array and string methods, including
+  - map, filter, reduce
+  - forEach, includes
+  - sort
+  - split, splice, slice
+  - spread operator
+- regex
+  - test, replace, 
+- object methods
+  - keys, values, entries
+
+[Explore challenges](./javascript/code-challenges/)
+
+---
 
 ### 301 Code Challenges
+
+See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
 
 Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`
 
