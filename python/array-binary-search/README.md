@@ -10,8 +10,8 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 ![Whiteboard solution](./array-binary-search.png)
 
 ## Approach & Efficiency
-Binary search is a well-established O(N logN) algorithm.  I guess it's roots are in the common sense apporach of narrowing the search space by spliting it in half.
+Binary search is a well-established O(logN) algorithm.  I guess it's roots are in the common sense apporach of narrowing the search space by spliting it in half.
 
-### Big O: O(N logN) time and O(N) space
+### Big O: O(logN) time and O(N) space
 
 ---
