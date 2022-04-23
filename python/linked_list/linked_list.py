@@ -25,4 +25,9 @@ class LinkedList:
         return False
 
     def __str__(self):
-        pass
+        s = ''
+        current = self.head
+        while current:
+            s = s + '{ '+ current.value + ' } -> '
+            current = current.next
+        return s + "NULL"

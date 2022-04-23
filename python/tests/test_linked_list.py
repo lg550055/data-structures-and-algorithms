@@ -24,21 +24,15 @@ def test_new_head_inserted_into_not_empty_list():
     linked.insert('banana')
     assert linked.head.value == 'banana'
 
-
-@pytest.mark.skip("TODO")
 def test_to_string_empty():
     linked_list = LinkedList()
     assert str(linked_list) == "NULL"
 
-
-@pytest.mark.skip("TODO")
 def test_to_string_single():
     linked_list = LinkedList()
     linked_list.insert("apple")
     assert str(linked_list) == "{ apple } -> NULL"
 
-
-@pytest.mark.skip("TODO")
 def test_to_string_double():
     linked_list = LinkedList()
     linked_list.insert("apple")
