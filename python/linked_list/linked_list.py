@@ -5,9 +5,7 @@ class Node:
         self.next = next_
 
 class LinkedList:
-    """
-    Put docstring here
-    """
+    """ Put docstring here """
     def __init__(self):
         self.head = None
 
@@ -28,6 +26,40 @@ class LinkedList:
         s = ''
         current = self.head
         while current:
-            s = s + '{ '+ current.value + ' } -> '
+            s = s + '{ '+ str(current.value) + ' } -> '
             current = current.next
         return s + "NULL"
+
+    def append(self, e):
+        """ inserts new node at end of list """
+        current = self.head
+        while current:
+            if current.next == None:
+                current.next = Node(e)
+                break
+            current = current.next
+        if not self.head:
+            self.head = Node(e)
+
+    def insert_before(self, target, e):
+        """ inserts new node 'e' before target """
+        current = self.head
+        if current.value == target:
+            self.insert(e)
+        else:
+            while current.next:
+                if current.next.value == target:
+                    current.next = Node(e, current.next)
+                    break
+                current = current.next
+            if not current.next:
+                return False
+
+    def insert_after(self, target, e):
+        """ inserts new node 'e' after target """
+        current = self.head
+        while current:
+            if current.value == target:
+                current.next = Node(e, current.next)
+                break
+            current = current.next
