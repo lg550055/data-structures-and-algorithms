@@ -4,6 +4,11 @@ class Node:
         self.value = value
         self.next = next_
 
+class TargetError(Exception):
+    """ handles target errors in LinkedList methods """
+    def __str__(self):
+        return 'Invalid. Target is either negative or larger than the list'
+
 class LinkedList:
     """ Put docstring here """
     def __init__(self):
@@ -63,3 +68,16 @@ class LinkedList:
                 current.next = Node(e, current.next)
                 break
             current = current.next
+
+    def kth_from_end(self, k):
+        """ reads kth value form the end of list """
+        possitions = {}
+        counter = 0
+        current = self.head
+        while current:
+            counter += 1
+            possitions[counter] = current.value
+            current = current.next
+        if k >= counter or k < 0:
+            raise TargetError
+        return possitions[counter-k]
