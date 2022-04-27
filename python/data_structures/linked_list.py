@@ -35,37 +35,37 @@ class LinkedList:
             current = current.next
         return s + "NULL"
 
-    def append(self, e):
+    def append(self, value):
         """ inserts new node at end of list """
         current = self.head
         while current:
             if current.next == None:
-                current.next = Node(e)
+                current.next = Node(value)
                 break
             current = current.next
         if not self.head:
-            self.head = Node(e)
+            self.head = Node(value)
 
-    def insert_before(self, target, e):
-        """ inserts new node 'e' before target """
+    def insert_before(self, target, value):
+        """ inserts new node before target """
         current = self.head
         if current.value == target:
-            self.insert(e)
+            self.insert(value)
         else:
             while current.next:
                 if current.next.value == target:
-                    current.next = Node(e, current.next)
+                    current.next = Node(value, current.next)
                     break
                 current = current.next
             if not current.next:
                 return False
 
-    def insert_after(self, target, e):
-        """ inserts new node 'e' after target """
+    def insert_after(self, target, value):
+        """ inserts new node after target """
         current = self.head
         while current:
             if current.value == target:
-                current.next = Node(e, current.next)
+                current.next = Node(value, current.next)
                 break
             current = current.next
 

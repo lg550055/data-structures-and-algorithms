@@ -2,6 +2,17 @@
 
 ## Language: `Python`
 
+## Table of Contents
+
+- [08 Linked List Zip](./docs/linked_list_zip/README.md)
+- [07 Linked List Kth](./docs/linked_list_kth/README.md)
+- [06 Linked List Insertions](./docs/linked_list_insertions/README.md)
+- [05 Linked List](./docs/linked_list/README.md)
+- [04 -skipped, not a data structure]()
+- [03 Array Binary Search](./docs/array-binary-search/README.md)
+- [02 Array Insert Shift](./docs/array-insert-shift/README.md)
+- [01 Array Reverse](./docs/array-reverse/README.md)
+
 ### Folder and Challenge Setup
 
 Each type of code challenge has slightly different instructions. Please refer to the notes and examples below for instructions for each DS&A assignment type.
@@ -65,7 +76,7 @@ Code challenges should be completed within a folder named `code_challenges` unde
       - Your test file would require the challenge file found in the directory above, which has your exported function
         - i.e. `from code_challenges.find_maximum_value import find_maximum_value`
 
-## Running Tests
+### Running Tests
 
 If you setup your folders according to the above guidelines, running tests becomes a matter of deciding which tests you want to execute.  Jest does a good job at finding the test files that match what you specify in the test command
 
