@@ -70,7 +70,7 @@ def test_a_empty():
         expected.insert(value)
     assert str(actual) == str(expected)
 
-
+# @pytest.mark.skip()
 def test_b_empty():
     list_a = LinkedList()
     for value in reversed([1, 2, 3]):
@@ -80,4 +80,4 @@ def test_b_empty():
     expected = LinkedList()
     for value in reversed([1, 2, 3]):
         expected.insert(value)
-    assert actual == expected
+    assert str(actual) == str(expected)
