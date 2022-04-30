@@ -4,6 +4,9 @@
 
 ## Table of Contents
 
+- [10b Queue]()
+- [10a Stack]()
+- [09 -skipped, not a data structure]()
 - [08 Linked List Zip](./docs/linked_list_zip/README.md)
 - [07 Linked List Kth](./docs/linked_list_kth/README.md)
 - [06 Linked List Insertions](./docs/linked_list_insertions/README.md)
