@@ -4,8 +4,7 @@
 
 ## Table of Contents
 
-- [10b Queue]()
-- [10a Stack]()
+- [10 Stack and Queue](./docs/stack_and_queue/README.md)
 - [09 -skipped, not a data structure]()
 - [08 Linked List Zip](./docs/linked_list_zip/README.md)
 - [07 Linked List Kth](./docs/linked_list_kth/README.md)
