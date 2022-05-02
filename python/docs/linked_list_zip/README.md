@@ -31,3 +31,5 @@ However, this solution has O(n) space complexity instead of the desired O(1).
 To achieve O(1), instead of creating a new list and appending the values of each node to this list, we would change the pointers of each node.
 
 ---
+
+[Back to table of contents](../../README.md)
