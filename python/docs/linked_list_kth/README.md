@@ -31,3 +31,5 @@ The approach passes all tests:
 A more efficient solution (like traversing two variables) would result in better space complexity (O(1)).
 
 ---
+
+[Back to table of contents](../../README.md)
