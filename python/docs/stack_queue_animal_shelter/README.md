@@ -13,7 +13,7 @@ Create class called AnimalShelter.
     - Stretch goal: ff a cat or dog isn’t preferred, return whichever has been in the shelter the longest
 
 ## Whiteboard
-![Whiteboard solution](./pseudoQueue.png)
+![Whiteboard solution](./AnimalShelter.png)
 
 ## Approach & Efficiency
 #### Approach
