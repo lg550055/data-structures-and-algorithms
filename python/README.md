@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [12 Stack-queue animal shelter](./docs/stack_queue_animal_shelter/README.md)
 - [11 Stack-queue pseudo](./docs/stack_queue_pseudo/README.md)
 - [10 Stack and Queue](./docs/stack_and_queue/README.md)
 - [09 -skipped, not a data structure]()
