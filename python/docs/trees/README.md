@@ -20,18 +20,18 @@
     - **Return**: boolean indicating whether or not the value is in the tree
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Binary Tree](./binarytree.png)
+![Binary Search Tree]()
 
 ## Approach & Efficiency
-- Insert: simply assigns a new node to the head and passes the original head as the next to to the new.
-  - Time: O(1)
-  - Space: O(1)
-- Includes: traverses through the list until it finds the target value, in which case it breaks and returns True.  Otherwise, return False
-  - Time: O(n)
-  - Space: O(1)
-- String: traverses through the list adding each value to a string to be formated and returned at the end.
-  - Time: O(n)
-  - Space: O(n)
+
+#### Binary Tree
+  - **Algorithm**:  All depth first traversal algorithms are the same, except that the order of the visited nodes is changed as follows:
+  - pre-order:  root >> left >> right
+  - in-order:  left >> root >> right
+  - post-order:  left >> right >> root
+  Recursively visit all nodes in the corresponding order, attaching the value of each node to the results list, then return it.
+  - **Efficiency**: Time and Space: O(n) -visits all nodes and creates and array containing the value of each node
 
 ## Solution
 

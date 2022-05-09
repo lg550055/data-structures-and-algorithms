@@ -1,11 +1,14 @@
+from tkinter import NO
+
+
 class Node:
-    def __init__(self, value, right=None, left=None):
+    def __init__(self, value):
         self.value = value
-        self.right = right
-        self.left = left
+        self.right = None
+        self.left = None
 
 class BinaryTree:
-    """ Has methods to traverse pre, in and post order """
+    """ Methods to traverse pre, in and post order return a list of values """
 
     def __init__(self):
         self.root = None
@@ -20,7 +23,6 @@ class BinaryTree:
             check_nodes(root.left,values)
             check_nodes(root.right,values)
             return values
-        
         check_nodes(self.root, values)
         return values
 
@@ -34,7 +36,6 @@ class BinaryTree:
             values.append(root.value)
             check_nodes(root.right,values)
             return values
-        
         check_nodes(self.root, values)
         return values
 
@@ -48,6 +49,5 @@ class BinaryTree:
             check_nodes(root.right,values)
             values.append(root.value)
             return values
-        
         check_nodes(self.root, values)
         return values
