@@ -48,3 +48,15 @@ class BinaryTree:
             return values
         check_nodes(self.root, values)
         return values
+
+    def find_maximum_value(self):
+        maxv = self.root.value
+        def check_nodes(root):
+            nonlocal maxv
+            if not root:
+                return
+            maxv = max(root.value, maxv)
+            check_nodes(root.left)
+            check_nodes(root.right)
+            return maxv
+        return check_nodes(self.root)

@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [16 Tree max](./docs/tree_max/README.md)
 - [15 Binary Tree and BST](./docs/trees/README.md)
 - [14 -skipped, not a data structure]()
 - [13 Stack queue brackets](./docs/stack_queue_brackets/README.md)
