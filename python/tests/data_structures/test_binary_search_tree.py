@@ -69,6 +69,21 @@ def test_not_contains(tree):
     assert actual == expected
 
 
+def test_fourth_level():
+    tree = BinarySearchTree()
+    tree.add(5)
+    tree.add(3)
+    tree.add(7)
+    tree.add(2)
+    tree.add(9)
+    tree.add(4)
+    tree.add(6)
+    tree.add(1)
+    actual = tree.contains(1)
+    expected = True
+    assert actual == expected
+
+
 @pytest.fixture
 def tree():
     tree = BinarySearchTree()
