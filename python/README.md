@@ -4,6 +4,8 @@
 
 ## Table of Contents
 
+- [15 Binary Tree and BST](./docs/trees/README.md)
+- [14 -skipped, not a data structure]()
 - [13 Stack queue brackets](./docs/stack_queue_brackets/README.md)
 - [12 Stack queue animal shelter](./docs/stack_queue_animal_shelter/README.md)
 - [11 Stack queue pseudo](./docs/stack_queue_pseudo/README.md)

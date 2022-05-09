@@ -21,7 +21,7 @@
 
 ## Whiteboard Process
 ![Binary Tree](./binarytree.png)
-![Binary Search Tree]()
+![Binary Search Tree](./bst.png)
 
 ## Approach & Efficiency
 
@@ -32,6 +32,16 @@
   - post-order:  left >> right >> root
   Recursively visit all nodes in the corresponding order, attaching the value of each node to the results list, then return it.
   - **Efficiency**: Time and Space: O(n) -visits all nodes and creates and array containing the value of each node
+
+#### Binary Seatch Tree
+  - **Add**:  Recursively perform:
+    - if root is None, add value to root
+    - else, if value is smaller than root's, check left, otherwise check right
+    - **Efficiency**: Time O(log n), Space: O(1)
+  - **Contains**: Recursively perform:
+    - if root value matches, return True
+    - else, if value is smaller than root's, check left, otherwise check right
+    - **Efficiency**: Time O(log n), Space: O(1)
 
 ## Solution
 
