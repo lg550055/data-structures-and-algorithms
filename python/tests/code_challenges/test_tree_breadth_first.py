@@ -36,8 +36,8 @@ def test_add_two_nodes():
     tree = BinaryTree()
     tree.add("apples")
     tree.add("bananas")
-    assert tree._root.value == "apples"
-    assert tree._root.left.value == "bananas"
+    assert tree.root.value == "apples"
+    assert tree.root.left.value == "bananas"
 
 
 @pytest.mark.skip("TODO")
@@ -77,7 +77,7 @@ def test_example_from_reading():
     level_2_left = Node(7, level_3_2, level_3_6)
     level_2_right = Node(5, right=level_3_9)
 
-    tree._root = Node(2, level_2_left, level_2_right)
+    tree.root = Node(2, level_2_left, level_2_right)
 
     expected = [2, 7, 5, 2, 6, 9, 5, 11, 4]
     actual = BinaryTree.breadth_first(tree)
