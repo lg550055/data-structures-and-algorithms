@@ -1,3 +1,5 @@
+from data_structures.queue import Queue
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -5,10 +7,36 @@ class Node:
         self.left = None
 
 class BinaryTree:
-    """ Methods to traverse pre, in and post order return a list of values """
+    """ Methods to traverse pre, in and post order return a list of values,
+        add method adds a node to the tree
+        find_maximum_value return the maximum value in the tree
+    """
 
-    def __init__(self):
-        self.root = None
+    def __init__(self, root=None, values=None):
+        self.root = root
+        if values:
+            for value in values:
+                self.add(value)
+
+    def add(self, value):
+        node = Node(value)
+        if not self.root:
+            self.root = node
+            return
+        q = Queue()
+        q.enqueue(self.root)
+        while q:
+            front = q.dequeue()
+            if not front.left:
+                front.left = node
+                return
+            else:
+                q.enqueue(front.left)
+            if not front.right:
+                front.right = node
+                return
+            else:
+                q.enqueue(front.right)
 
     def pre_order(self):
         """ root >> left >> right """
