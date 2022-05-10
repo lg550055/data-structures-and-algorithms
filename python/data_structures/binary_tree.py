@@ -1,10 +1,10 @@
 from data_structures.queue import Queue
 
 class Node:
-    def __init__(self, value):
+    def __init__(self, value, left=None, right=None):
         self.value = value
-        self.right = None
-        self.left = None
+        self.right = right
+        self.left = left
 
 class BinaryTree:
     """ Methods to traverse pre, in and post order return a list of values,
