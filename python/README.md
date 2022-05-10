@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [17 Breadth first](./docs/tree_breadth_first/README.md)
 - [16 Tree max](./docs/tree_max/README.md)
 - [15 Binary Tree and BST](./docs/trees/README.md)
 - [14 -skipped, not a data structure]()
