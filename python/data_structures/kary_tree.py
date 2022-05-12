@@ -7,7 +7,6 @@ class KaryTree:
 
     def breadth_first(self):
         queue = Queue()
-
         collection = []
 
         queue.enqueue(self.root)
@@ -23,7 +22,6 @@ class KaryTree:
 
 class Node:
     """K-Ary Tree Node"""
-
     def __init__(self, value):
         self.value = value
         self.children = []
