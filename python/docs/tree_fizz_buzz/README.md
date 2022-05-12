@@ -14,31 +14,27 @@ Determine whether or not the value of each node is divisible by 3, 5 or both. Cr
 - neither 3 nor 5, turn the number into a String
 
 ## Whiteboard
-![Whiteboard solution](bfs.png)
+![Whiteboard solution](k-aryTree.png)
 
 ## Approach & Efficiency
 #### Approach
-- Use a queue to store the nodes to visit.
-- Begin with an empty output list.
-- Add the root to the queue
-- While there are elements in the queue:
-  - Dequeue the front element
-  - add each of its left and right nodes to the queue
-  - append its value to the output list
-- Return the output list.
+Use two queues.  One to traverse the input tree.  And an auxiliary queue to track where to add new nodes to the output tree.
+
+- Make the root of the input tree the root of the output tree
+- Traverse through the input tree using Breadth First
+  - At each node, enqueue the node
+  - Dequeue and enqueue it in the aux queue as many times as it has children
+  - Dequeue the aux queue
+  - Transform the current node value with fizz_buzz and add it as a child of the node coming out of the aux queue
+- Return the output tree
 
 #### Efficiency: O(N) time and O(n) space
 
-Has to visit every node and create a list with 'n' elements.
+Has to visit every node of the input tree and create an output tree with 'n' elements.
 
 ## Solution
-The approach passes all tests:
-- tree = None
-- toot = None
-- single node tree
-- two-node tree
-- four-node tree
-- four-level tree with child gaps
+The approach passes all required tests, most importantly:
+- four-level tree with child gaps and non-constant number of children for each node
 
 ---
 
