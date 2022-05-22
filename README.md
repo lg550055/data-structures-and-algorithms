@@ -18,6 +18,8 @@ Topics include:
 - Regex
 - Recurssion
 
+[Explore Python challenges](./python/)
+
 ---
 
 #### 15 sets of JavaScript code challenges
