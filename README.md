@@ -1,8 +1,26 @@
 ## Data Structures and Algorithms
 
-### Progress to date:  Completed JavaScript
+#### 15 sets of Python code challenges
+Topics include:
+- Linked lists
+- Stacks and Queues
+- File read and write
+- Trees
+  - Binary Search Trees
+  - Binary Trees
+  - K-ary Trees
+  - Depth first search
+  - Breadth first serach
+- Arrays
+  - Binary search
+  - Insert shift
+  - Reverse
+- Regex
+- Recurssion
 
-##### 15 sets of JavaScript code challenges
+---
+
+#### 15 sets of JavaScript code challenges
 Topics include:
 - loops
 - conditionals (inc ternary)
@@ -17,26 +35,12 @@ Topics include:
 - object methods
   - keys, values, entries
 
-[Explore challenges](./javascript/code-challenges/)
+[Explore JS challenges](./javascript/code-challenges/)
 
 ---
 
-### 301 Code Challenges
+### To run tests
 
-See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
-
-Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`
-
-Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
-
-If you have not already done so, run `npm install` from within this folder to setup your system to be able to run tests using `Jest`
-
-To run your tests
-
-- Change to the `javascript` folder
+- Change to the `python` or `javascript` folder
 - run `npm test` to run all of the tests
 - run `npm test ##` to only run tests for challenge ## (i.e. 01)
-
-### 401 Data Structures, Code Challenges
-
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
