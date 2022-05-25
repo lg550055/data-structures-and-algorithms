@@ -1,10 +1,14 @@
 ## Data Structures and Algorithms
 
-#### 15 sets of Python code challenges
+#### 20 sets of Python code challenges
 Topics include:
 - Linked lists
 - Stacks and Queues
 - File read and write
+- Sort
+  - Insertion sort
+  - Merge sort
+  - Quick sort
 - Trees
   - Binary Search Trees
   - Binary Trees
