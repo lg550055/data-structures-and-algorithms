@@ -6,15 +6,15 @@
 - Present a complete set of working tests
 
 ## Whiteboard Process
-![Pseudocode walk through](insertion_sort.jpg)
+![Pseudocode walk through](merge_sort.jpg)
 
 ## Approach & Efficiency
 Merge sort appears to have a Big O time complexity of O(n log n) and space complexity of O(1).
 
 ## Solution
-To test run the code, use `pytest -k insertion_sort`
+To test run the code, use `pytest -k merge_sort`
 
-Currently, there are five unit tests (all passed):
+Passes the following unit tests:
 
 - two_values  [20,15]
 - sample_array  [8,4,23,42,16,15]
