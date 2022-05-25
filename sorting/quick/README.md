@@ -1,22 +1,22 @@
 # Challenge Summary
 
-### Insertion Sort
+### Merge Sort
 - Provide a visual step through for the sample array `[8,4,23,42,16,15]` based on the provided pseudo code
 - Convert the pseudo-code into working code in your language
 - Present a complete set of working tests
 
 ## Whiteboard Process
-![Pseudocode walk through](insertion_sort.jpg)
+*No whiteboard required for this challenge*
 
 ## Approach & Efficiency
-Insertion sort appears to have a Big O time complexity of O(n^2) and space complexity of O(1).
+Quick sort has a Big O time complexity of O(n^2) and average case complexity of O(n log n) and space complexity of O(n).
 
 ## Solution
-[Code directory](../../python/code_challenges/insertion_sort.py)
+[Code directory](../../python/code_challenges/quick_sort.py)
 
-Use `pytest -k insertion_sort` in the python directory to run the tests.
+Use `pytest -k quick_sort` in the python directory to run the tests.
 
-Currently, there are five unit tests (all passed):
+Passes the following unit tests:
 
 - two_values  [20,15]
 - sample_array  [8,4,23,42,16,15]
