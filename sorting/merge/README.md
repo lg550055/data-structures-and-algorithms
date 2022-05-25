@@ -12,7 +12,9 @@
 Merge sort appears to have a Big O time complexity of O(n log n) and space complexity of O(1).
 
 ## Solution
-To test run the code, use `pytest -k merge_sort`
+[Code directory](../../python/code_challenges/merge_sort.py)
+
+Use `pytest -k merge_sort` in the python directory to run the tests.
 
 Passes the following unit tests:
 

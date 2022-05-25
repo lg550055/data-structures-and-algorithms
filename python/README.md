@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [28. Quick sort](../sorting/quick/README.md)
 - [27. Merge sort](../sorting/merge/README.md)
 - [26. Insertion sort](../sorting/insertion/README.md)
 - [19-25. -not a code challenge or data structure]()
