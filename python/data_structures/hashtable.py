@@ -1,5 +1,6 @@
 from data_structures.linked_list import LinkedList
 
+
 class Hashtable:
     """ Hash table with set, get, contains, keys and hash methods """
 
@@ -10,7 +11,7 @@ class Hashtable:
 
     def hash(self, key):
         """ Returns the index corresponding to the key """
-        return (sum([ord(e) for e in key]) * 93) % self.size
+        return (sum([ord(e) for e in str(key)]) * 93) % self.size
 
 
     def set(self, key, value):
