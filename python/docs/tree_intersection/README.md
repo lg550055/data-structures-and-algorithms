@@ -4,13 +4,13 @@ Write a function called tree_intersection that takes two binary trees as paramet
 Using your Hashmap implementation as a part of your algorithm, return a set of values found in both trees.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Tree intersection w/b](treeIntersection.png)
 
 ## Approach & Efficiency
 
 The Binary Tree class has three similar traversing methods that return a list of the values in the tree.
 
-Traverse each tree once to obtain its values.
+Traverse each tree once to obtain the list of its values.
 Iterate through the shortest list of values, adding each value to a hashtable if:
   that value is not already in the hashtable, and
   that value is in the other list of values
