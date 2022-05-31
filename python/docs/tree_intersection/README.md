@@ -8,7 +8,7 @@ Using your Hashmap implementation as a part of your algorithm, return a set of v
 
 ## Approach & Efficiency
 
-The Binary Tree class has three similar traversing methods that return a list of the values in the tree.
+The Binary Tree class has three similar traversing methods (e.g. in_order) that return a list of the values in the tree.
 
 Traverse each tree once to obtain the list of its values.
 Iterate through the shortest list of values, adding each value to a hashtable if:
