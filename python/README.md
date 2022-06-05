@@ -4,8 +4,10 @@
 
 ## Table of Contents
 
-- [30. Tree intersection](./docs/tree_intersection/README.md)
-- [29. Hashtable repeated word](./docs/hashtable_repeated_word/README.md)
+- [32. Graph](./docs/graph/README.md)
+- [31. Tree intersection](./docs/tree_intersection/README.md)
+- [30. Hashtable repeated word](./docs/hashtable_repeated_word/README.md)
+- [29. Hashtable](./docs/hashtable/README.md)
 - [28. Quick sort](../sorting/quick/README.md)
 - [27. Merge sort](../sorting/merge/README.md)
 - [26. Insertion sort](../sorting/insertion/README.md)
