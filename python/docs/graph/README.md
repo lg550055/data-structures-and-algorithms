@@ -1,5 +1,4 @@
 # Graphs
-<!-- Short summary or background information -->
 
 ## Challenge
 Implement a graph represented as an adjacency list with the following methods:
