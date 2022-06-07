@@ -1,3 +1,6 @@
+import queue
+
+
 class Graph:
     """ Implements a graph """
     def __init__(self):
@@ -13,7 +16,7 @@ class Graph:
         return len(self._adjacency_list)
 
     def get_nodes(self):
-        return self._adjacency_list # use .keys()?
+        return self._adjacency_list # use .keys() ?
     
     def add_edge(self, vertex1, vertex2, weight=0):
         if vertex1 not in self._adjacency_list or vertex2 not in self._adjacency_list:
@@ -24,12 +27,29 @@ class Graph:
     def get_neighbors(self, vertex):
         """ Returns the list of edges of the vertex """
         return self._adjacency_list[vertex]
+    
+    def breadth_first(self, vertex):
+        """ Returns a collection of vertices """
+        visited = []
+        q = []
+
+        q.append(vertex)
+        visited.append(vertex)
+
+        while q:
+            vertex = q.pop(0)
+            edges = self.get_neighbors(vertex)
+            neighbors = [e.vertex for e in edges]
+            for v in neighbors:
+                if v not in visited:
+                    q.append(v)
+                    visited.append(v)
+        return visited
 
 class Vertex:
     """ Creates a graph vertex """
     def __init__(self, value):
         self.value = value
-        self.neighbors = []
 
 class Edge:
     """ Creates an edge """
