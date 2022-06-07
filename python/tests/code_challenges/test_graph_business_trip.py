@@ -3,34 +3,39 @@ from data_structures.graph import Graph
 from code_challenges.graph_business_trip import direct_flights
 
 
-@pytest.mark.skip("TODO")
 def test_metroville_pandora(planets):
     names = ["Metroville", "Pandora"]
     assert direct_flights(planets, names) == (True, 82)
 
 
-@pytest.mark.skip("TODO")
 def test_metroville_monstropolis(planets):
     names = ["Metroville", "New Monstropolis"]
     assert direct_flights(planets, names) == (True, 105)
 
 
-@pytest.mark.skip("TODO")
 def test_arendelle_monstropolis_naboo(planets):
     names = ["Arendelle", "New Monstropolis", "Naboo"]
     assert direct_flights(planets, names) == (True, 115)
 
 
-@pytest.mark.skip("TODO")
 def test_naboo_pandora(planets):
     names = ["Naboo", "Pandora"]
     assert direct_flights(planets, names) == (False, 0)
 
 
-@pytest.mark.skip("TODO")
 def test_narnia_arendelle_naboo(planets):
     names = ["Narnia", "Arendelle", "Naboo"]
     assert direct_flights(planets, names) == (False, 0)
+
+# @pytest.mark.skip()
+def test_pandora_narnia_short(planets):
+    names = ["Pandora", "Metroville", "Narnia"]
+    assert direct_flights(planets, names) == (True, 119)
+
+
+def test_pandora_narnia_expensive(planets):
+    names = ["Pandora", "Arendelle", "New Monstropolis", "Naboo", "Narnia"]
+    assert direct_flights(planets, names) == (True, 515)
 
 
 @pytest.fixture
