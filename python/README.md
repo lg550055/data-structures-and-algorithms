@@ -4,6 +4,7 @@
 
 ## Table of Contents
 
+- [33. Graph BFS](./docs/graph_breadth_first/README.md)
 - [32. Graph](./docs/graph/README.md)
 - [31. Tree intersection](./docs/tree_intersection/README.md)
 - [30. Hashtable repeated word](./docs/hashtable_repeated_word/README.md)
