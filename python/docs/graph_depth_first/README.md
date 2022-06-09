@@ -1,5 +1,4 @@
 # Depth First Traversal
-<!-- Short summary or background information -->
 
 ## Challenge
 Write a Depth first method for the Graph class:
@@ -9,16 +8,23 @@ Write a Depth first method for the Graph class:
 
 ## Approach & Efficiency
 
+#### Approach
 
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Just like in tree traversal, the approach to depth first in graphs uses recursion.  Similarly to breadth first, depth first uses a list of visited vertices to ensure each vertex is only visited once.
 
-## Solution
-<!-- Embedded whiteboard image -->
+#### Efficiency
 
-## Requirements: passes required and custom tests
+The traversal visits all vertices and includes the in the visited list.  Also, worse-case, the call stack may approach the number of vertices.
 
-Ensure your complete solution follows the standard requirements.
+Time: O(n)
+Space: O(n)
 
-1. Write [unit tests](../../Challenge_Testing){:target="_blank"}
-1. Follow the [template for a well-formatted README](../../Challenge_Documentation){:target="_blank"}
-1. Submit the assignment following [these instructions](../../Challenge_Submission){:target="_blank"}
+## Requirements: passes all tests
+
+Tests passes:
+
+- Empty graph / root not in graph
+- Single vertex
+- Two vertices
+- Two vertices, two edges
+- Multiple vertices and multiple edges

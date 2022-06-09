@@ -30,7 +30,6 @@ class Graph:
         """ Returns a collection of vertices """
         visited = []
         q = []
-
         q.append(vertex)
         visited.append(vertex)
 
@@ -46,15 +45,19 @@ class Graph:
 
     def depth_first_search(self, vertex):
         """ Returns a list of vertices in pre-order """
+        if vertex not in self.get_nodes():
+            return []
+        
         visited = []
 
-        def traverse(self, vertex, visited):
+        def traverse(vertex, visited):
             visited.append(vertex)
             edges = self.get_neighbors(vertex)
             neighbors = [e.vertex for e in edges]
             for v in neighbors:
                 if v not in visited:
-                    self.traverse(v, visited)
+                    traverse(v, visited)
+        
         traverse(vertex, visited)
         return visited
 
