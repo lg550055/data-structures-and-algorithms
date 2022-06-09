@@ -1,5 +1,3 @@
-import queue
-
 
 class Graph:
     """ Implements a graph """
@@ -44,6 +42,20 @@ class Graph:
                 if v not in visited:
                     q.append(v)
                     visited.append(v)
+        return visited
+
+    def depth_first_search(self, vertex):
+        """ Returns a list of vertices in pre-order """
+        visited = []
+
+        def traverse(self, vertex, visited):
+            visited.append(vertex)
+            edges = self.get_neighbors(vertex)
+            neighbors = [e.vertex for e in edges]
+            for v in neighbors:
+                if v not in visited:
+                    self.traverse(v, visited)
+        traverse(vertex, visited)
         return visited
 
 class Vertex:
