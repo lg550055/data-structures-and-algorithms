@@ -2,7 +2,7 @@ import pytest
 from data_structures.graph import Graph, Vertex
 
 
-@pytest.mark.skip("TODO")
+# @pytest.mark.skip("TODO")
 def test_full(graph_and_root):
     graph, root = graph_and_root
     actual = graph.depth_first_search(root)
