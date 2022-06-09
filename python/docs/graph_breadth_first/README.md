@@ -17,8 +17,11 @@ The approach is similar to breadth first traversal for trees.  The key differenc
 We enqueue the start node and add it to the visited list.  While there are items on the queue, dequeue (FIFO) vertex and iterate thorugh its neighbors. If neighbor not in visited, then enqueue and append it to visited.
 
 #### Efficiency
-Time: O(n)
-Space: O(n)
+
+The traversal, by looking at all edges, visits each vertex once and adds it to the visited list.  Also, worse-case, the size of the queue may approach the number of vertices.
+
+Time: O(v+e)
+Space: O(v+e)
 
 ## Solution
 To use the breadth_first(vertex) method, import the class Graph from data_structures.graph.  Call the method on a graph with dot notation and pass a vertex in the graph.

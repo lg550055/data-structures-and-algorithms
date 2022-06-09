@@ -14,10 +14,10 @@ Just like in tree traversal, the approach to depth first in graphs uses recursio
 
 #### Efficiency
 
-The traversal visits all vertices and includes the in the visited list.  Also, worse-case, the call stack may approach the number of vertices.
+The traversal, by looking at all edges, visits each vertex once and adds it to the visited list.  Also, worse-case, the call stack may approach the number of vertices.
 
-Time: O(n)
-Space: O(n)
+Time: O(v+e)
+Space: O(v+e)
 
 ## Requirements: passes all tests
 
