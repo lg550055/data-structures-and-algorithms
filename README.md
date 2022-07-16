@@ -1,4 +1,4 @@
-## Data Structures and Algorithms &middot; ![pull requests](https://badgen.net/github/prs/micromatch/micromatch)
+## Data Structures and Algorithms &middot; ![pull requests](https://badgen.net/github/prs/micromatch/micromatch) ![checks](https://badgen.net/github/checks/node-formidable/node-formidable)
 
 #### 20 sets of Python code challenges
 Topics include:
